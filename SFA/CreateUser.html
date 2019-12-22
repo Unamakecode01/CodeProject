@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Courier New, Helvetica, sans-serif;
+}
+
+.navbar {
+  font-family: "Courier New";
+  overflow: hidden;
+  background: #ffccff; 
+  background: -webkit-linear-gradient(to right, #ccaaff, #ffccff); 
+  background: linear-gradient(to right, #ccaaff, #ffccff); 
+}
+
+.navbar a {
+  font-family: "Courier New";
+  float: left;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 30px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(162, 0, 255);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.icon {
+    font-family: Courier New;
+    font-size: 100px;
+    color: gray;
+    border: none;
+    background-color: #CCCCFF;
+    
+    
+}
+ 
+.icon:hover  {
+  cursor: pointer;
+background-color: #8095CC;
+
+}
+.icon2{
+  font-family: Courier New;
+  font-size: 100px;
+  color: gray;
+  border:none;
+  background-color: #FBEDC9;
+}
+.icon2:hover{
+  cursor: pointer;
+  background-color: rgb(250, 209, 134);
+}
+p{
+    font-family: "Courier New";
+}
+body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: white;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Add padding to containers */
+    .container {
+      font-family: "Courier New";
+      padding: 16px;
+      background-color: white;
+    }
+    
+    /* Full-width input fields */
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+    }
+    
+    input[type=text]:focus, input[type=password]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+    
+    /* Overwrite default styles of hr */
+    hr {
+      border: 1px solid #f1f1f1;
+      margin-bottom: 25px;
+    }
+    
+    /* Set a style for the submit button */
+    .registerbtn {
+      font-family: "Courier New";
+      font-size: 20px;
+      background-color: rgb(185, 117, 241);
+      color: white;
+      padding: 16px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+    
+    .registerbtn:hover {
+      opacity: 1;
+    }
+    
+    /* Add a blue text color to links */
+    a {
+      color: dodgerblue;
+    }
+    
+    /* Set a grey background color and center the text of the "sign in" section */
+    .signin {
+      background-color: #f1f1f1;
+      text-align: center;
+    }
+</style>
+</head>
+<body>
+    
+<div class="navbar">
+  <a href="artistForAdmin.php">Home</a>
+  <!-- <a href="#news">Artist</a>
+  <a href="#news">Music</a>
+  <a href="#news">Concert</a> -->
+  <a href="http://localhost/SFA/EditPage.html">EditAdmin</a>
+
+  <div class="dropdown">
+    <button class="dropbtn"><i class="fa fa-user"></i>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="artistList.php">log out</a>
+    </div>
+  </div> 
+</div>
+
+    
+    <form action="CreateUser.php" method = "post">
+      <div class="container">
+        <font size="10">Create new account</font>
+        <p><font size="5">Please fill in this form to create an account.</font></p>
+        <hr>
+    
+        <label for="username"><b><font size="5">Username</font></b></label>
+        <input type="text" placeholder="Enter Username" name="username" required>
+    
+        <label for="psw"><b><font size="5">Password</font></b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+    
+        <label for="psw-repeat"><b><font size="5">Repeat Password</font></b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+        
+    
+        <button type="submit" name="createbtn" class="registerbtn" >Create</button>
+      </div>
+      
+      
+    </form>
+    
+    
+</body>
+</html>

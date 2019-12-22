@@ -1,0 +1,97 @@
+html, body{
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: #FFC371;
+    background-size: cover;
+}
+.contain{
+    width: 300px;
+    height: 450px;
+    padding: 20px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: black;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+.fa{
+    width: 20px;
+    color: black;
+}
+h1{
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-family: "Tahoma";  
+  font-size: 30px;
+  border-bottom: 3px solid;
+  margin: 10px;
+  padding: 13px 0;
+}
+
+.box input{
+    width: 90%;
+    overflow: hidden;
+    font-size: 15px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border: none;
+    outline: none;
+    border-bottom:1px solid black;
+}
+
+.box input:hover,input:focus{
+    color: black;
+    outline: none;
+    border-bottom: 2px solid #FF5F6D;
+}
+
+.box button{
+    font-weight: bold;
+    width: 100%;
+    padding: 10px;
+    margin: 12px 0;
+    border: 2px solid black;
+    background: none;
+    text-transform: uppercase;
+    color: black;
+    transition: 0.5s all;
+    transition: 0.4s ease;
+}
+
+button:hover{
+    cursor: pointer;
+    background: #FF5F6D;
+    border-color: #FF5F6D;
+    color: white;
+}
+
+.box a{
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 20px;
+    color: #FF5F6D;
+}
+
+.box a:hover{
+    text-decoration: underline;
+}
+
+.box input:hover,input:focus{
+    color: black;
+    outline: none;
+    border-bottom: 2px solid #FF5F6D;
+}
+
+.contain [type="username"],.contain [type="password"]{
+    color: #FF5F6D;
+    font-weight: lighter;
+    transition: 0.2s all;
+}
+

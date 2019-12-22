@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<meta charset = "UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <head></head>
+    <body>
+        <div class="contain">
+            <form class="box" action="login.php" method = "post">
+                <h1>Login</h1>
+                <i class="fa far fa-user"></i>
+                <input type="username" name = "username" placeholder="Username">
+                
+                <i class="fa fas fa-unlock-alt"></i>
+                <input type="password" name = "password" placeholder="password">
+                <span style="color:red " id="message"></span>
+
+                <button type="submit" name = "submitBtn" value="submit">submit</button> 
+                
+                <i class="fa fas fa-key"></i>
+                <a href="#" class="forget">forget password?</a>
+            </form>
+        </div>
+    </body>
+</html>

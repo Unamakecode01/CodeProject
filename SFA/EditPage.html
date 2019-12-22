@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Courier New, Helvetica, sans-serif;
+  
+}
+
+.navbar {
+  overflow: hidden;
+  background: #ffccff;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ccaaff, #ffccff);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ccaaff, #ffccff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+ 
+}
+
+.navbar a {
+  float: left;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 30px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(162, 0, 255);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.icon {
+    font-family: Courier New;
+    font-size: 100px;
+    color: gray;
+    border: none;
+    background-color: #CCCCFF;
+    
+    
+    
+}
+ 
+.icon:hover  {
+  cursor: pointer;
+background-color: #8095CC;
+
+}
+.icon2{
+  font-family: Courier New;
+  font-size: 100px;
+  color: gray;
+  border:none;
+  background-color: #FBEDC9;
+}
+.icon2:hover{
+  cursor: pointer;
+  background-color: rgb(250, 209, 134);
+}
+p{
+    font-family: "Courier New";
+}
+</style>
+</head>
+<body>
+    
+<div class="navbar">
+  <a href="artistForAdmin.php">Home</a>
+  <!-- <a href="#news">Artist</a>
+  <a href="#news">Music</a>
+  <a href="#news">Concert</a> -->
+  <!-- <a href="http://localhost/SFA/EditPage.html">EditAdmin</a> -->
+
+  <div class="dropdown">
+    <button class="dropbtn"><i class="fa fa-user"></i>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="artistList.php">log out</a>
+    </div>
+  </div> 
+</div>
+
+<br><br><br><br><br><br><center><a href="http://localhost/SFA/CreateUser.php"><button class="icon"><img src="iconfinder_user-group_285648.png" width="200" height="200" ><br>Create</button></a>
+  <a href="http://localhost/SFA/alluser.php"><button class="icon2"><img src="bl_delete_1164526.png" width="200" height="200"><br>Delete</button></a></center>
+
+</body>
+</html>
